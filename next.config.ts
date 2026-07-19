@@ -1,10 +1,13 @@
 import type { NextConfig } from "next";
-import path from "path";
 
 const nextConfig: NextConfig = {
   experimental: {
     serverActions: {
-      allowedOrigins: ["localhost:3000"],
+      allowedOrigins: [
+        "localhost:3000",
+        "*.vercel.app",
+        process.env.APP_URL ?? "",
+      ].filter(Boolean),
     },
   },
   images: {
@@ -15,9 +18,6 @@ const nextConfig: NextConfig = {
       },
     ],
     formats: ["image/avif", "image/webp"],
-  },
-  turbopack: {
-    root: path.resolve(__dirname),
   },
 };
 
