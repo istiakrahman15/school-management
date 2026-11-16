@@ -223,7 +223,7 @@ src/
 │   ├── dashboard/             # Dashboard overview components
 │   └── providers/             # ThemeProvider
 ├── db/
-│   ├── schema.ts              # Drizzle ORM schema (19 tables)
+│   ├── schema.ts              # Drizzle ORM schema (25 tables)
 │   ├── index.ts               # DB client (SQLite/Turso)
 │   └── seed.ts                # Database seeder
 ├── actions/                   # Next.js Server Actions
