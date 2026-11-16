@@ -94,8 +94,8 @@ Built with Next.js 16 · TypeScript · Tailwind CSS v4 · Shadcn UI · Drizzle O
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/istiakrahman15/smartschool-os.git
-cd smartschool-os
+git clone https://github.com/istiakrahman15/school-management.git
+cd school-management
 ```
 
 ### 2. Install dependencies
@@ -168,11 +168,11 @@ Get a free Turso database at [turso.tech](https://turso.tech).
 curl -sSfL https://get.tur.so/install.sh | bash
 
 # Create a database
-turso db create smartschool-os
+turso db create school-management
 
 # Get credentials
-turso db show smartschool-os --url
-turso db tokens create smartschool-os
+turso db show school-management --url
+turso db tokens create school-management
 ```
 
 ### Running Migrations
